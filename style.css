@@ -1,0 +1,119 @@
+.body {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .container-swiper {
+    position: relative;
+    height: 550px;
+    width: 750px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .swiper-custom {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper2-custom {
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  .swiper-slide-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide-custom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .thumbsSlider-custom {
+    padding-right: 105px;
+  }
+  
+  .thumbsSlider-custom > div > div > img {
+    min-width: 176px !important;
+  }
+  
+  .swiper-wrapper-custom {
+    min-width: 176px !important;
+  }
+  
+  @media (max-width: 768px) {
+    .container-swiper {
+      flex-direction: column;
+      height: 600px;
+      width: 550px;
+    }
+  
+    .swiper-custom {
+      width: 100%;
+      height: 200px;
+      order: 1;
+      margin-top: 10px;
+    }
+  
+    .swiper2-custom {
+      width: 100%;
+      height: auto;
+    }
+  
+    .thumbsSlider-custom {
+      padding-right: 0;
+    }
+  
+    .swiper-wrapper-custom {
+      min-width: 0 !important;
+    }
+  
+    .swiper-custom {
+      direction: horizontal !important;
+    }
+  }
+  
+  @media screen and (max-width: 580px) {
+    .container-swiper {
+      width: 450px;
+    }
+  
+    .button-swiper-custom {
+      display: none;
+    }
+  
+    .thumbsSlider-custom > div > div > img {
+      min-width: 100% !important;
+      max-width: 120px !important;
+      min-height: 120px !important;
+      max-height: 120px !important;
+    }
+  
+    .swiper-wrapper-custom {
+      min-width: 120px !important;
+      min-height: 120px !important;
+      max-height: 120px !important;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .container-swiper {
+      width: 365px;
+    }
+  }
+  
+  @media screen and (max-width: 370px) {
+    .container-swiper {
+      width: 320px;
+    }
+  }
+  
